@@ -2,7 +2,7 @@
 
 A clean, responsive, and modern weather application built with HTML, CSS, and JavaScript. It fetches real-time weather data from the OpenWeatherMap API and displays it with dynamic icons and a user-friendly interface.
 
-### ✨ [Live Demo](https://arnabg2005.github.io/pro-weather-app/) ✨
+### ✨ [Project Demo](https://arnabg2005.github.io/pro-weather-app/) ✨
 
 ---
 
