@@ -6,7 +6,7 @@ A clean, responsive, and modern weather application built with HTML, CSS, and Ja
 
 ---
 
-![Weather App Screenshot](PASTE_YOUR_SCREENSHOT_URL_HERE)
+![Weather App Screenshot](https://github.com/arnabg2005/pro-weather-app/blob/main/Screenshot%20(49).png?raw=true)
 
 ---
 
