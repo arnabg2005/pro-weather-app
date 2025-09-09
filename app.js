@@ -4,16 +4,16 @@ var cityOutput = document.querySelector("#cityoutput");
 var descriptionOutput = document.querySelector('#description');
 var tempOutput = document.querySelector('#temp');
 var windOutput = document.querySelector('#wind');
-var apik = "af4017a8a1272ddd36c8b22bc864d46a"; // Your OpenWeatherMap API key
+var apik = "af4017a8a1272ddd36c8b22bc864d46a"; 
 
 function convertion(val) {
-    return (val - 273.15).toFixed(1); // Using 273.15 for more accurate Celsius conversion, 1 decimal place
+    return (val - 273.15).toFixed(1); 
 }
 
-// Function to get weather icon and emoji
+
 function getWeatherIconAndEmoji(description) {
-    let iconClass = 'fas fa-question-circle'; // Default icon
-    let emoji = '❓'; // Default emoji
+    let iconClass = 'fas fa-question-circle'; 
+    let emoji = '❓'; 
 
     if (description.includes('clear sky')) {
         iconClass = 'fas fa-sun';
@@ -51,7 +51,7 @@ btn.addEventListener('click', function() {
 
     fetch('https://api.openweathermap.org/data/2.5/weather?q=' + inputvalue.value + '&appid=' + apik)
         .then(res => {
-            if (!res.ok) { // Check for HTTP errors
+            if (!res.ok) { 
                 throw new Error('City not found or network error.');
             }
             return res.json();
@@ -67,7 +67,7 @@ btn.addEventListener('click', function() {
             cityOutput.innerHTML = `<i class="fas fa-city"></i> Weather of <span class="value">${nameval}</span>`;
             tempOutput.innerHTML = `<i class="fas fa-thermometer-half"></i> Temperature: <span class="value">${convertion(temperatureValue)} °C</span>`;
             descriptionOutput.innerHTML = `<i class="${iconClass}"></i> Sky Conditions: <span class="value">${descriptionText} <span class="emoji">${emoji}</span></span>`;
-            windOutput.innerHTML = `<i class="fas fa-wind"></i> Wind Speed: <span class="value">${windspeedValue} m/s</span>`; // OpenWeatherMap provides m/s by default
+            windOutput.innerHTML = `<i class="fas fa-wind"></i> Wind Speed: <span class="value">${windspeedValue} m/s</span>`; 
         })
         .catch(err => {
             alert(err.message || 'An error occurred. Please try again.');
@@ -76,4 +76,5 @@ btn.addEventListener('click', function() {
             tempOutput.innerHTML = '';
             windOutput.innerHTML = '';
         });
+
 });
