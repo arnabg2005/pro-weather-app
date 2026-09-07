@@ -27,3 +27,5 @@ A clean, responsive, and modern weather application built with HTML, CSS, and Ja
 -   **JavaScript (ES6):** For application logic, API calls (`fetch`), and DOM manipulation.
 -   **OpenWeatherMap API:** To source the real-time weather data.
 -   **Font Awesome:** For scalable vector icons.
+
+Arnab Ghosh
